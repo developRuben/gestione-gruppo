@@ -116,7 +116,17 @@ export default function Contatti() {
           </caption>
           <TableHead>
             <TableRow>
-              <TableCell sx={{ fontWeight: "bold" }} align="center">
+              <TableCell
+                sx={{
+                  fontWeight: "bold",
+                  position: "sticky",
+                  top: 0,
+                  left: 0,
+                  zIndex: 2,
+                  backgroundColor: "white",
+                }}
+                align="center"
+              >
                 NOME
               </TableCell>
               <TableCell sx={{ fontWeight: "bold" }} align="center">
@@ -152,7 +162,19 @@ export default function Contatti() {
                   <>
                     {isEditing !== row[0] && (
                       <TableRow key={`row-${index}`}>
-                        <TableCell align="center" component="th" scope="row">
+                        <TableCell
+                          align="center"
+                          component="th"
+                          scope="row"
+                          sx={{
+                            fontWeight: "bold",
+                            position: "sticky",
+                            top: 0,
+                            left: 0,
+                            zIndex: 1,
+                            backgroundColor: "white",
+                          }}
+                        >
                           {row[1].nome}
                         </TableCell>
                         <TableCell align="center" component="th" scope="row">
