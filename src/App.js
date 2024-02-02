@@ -21,7 +21,7 @@ function App() {
       <Navbar></Navbar>
       <div className="cards-container">
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
             <Paper elevation={3} sx={{ padding: "30px 12px 12px 12px" }}>
               <Typography gutterBottom variant="h5" component="div">
                 Broadcasting
@@ -45,7 +45,7 @@ function App() {
               </Button>
             </Paper>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
             <Paper elevation={3} sx={{ padding: "30px 12px 12px 12px" }}>
               <Typography gutterBottom variant="h5" component="div">
                 Comitive
@@ -67,7 +67,7 @@ function App() {
               </Button>
             </Paper>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
             <Paper elevation={3} sx={{ padding: "30px 12px 12px 12px" }}>
               <Typography gutterBottom variant="h5" component="div">
                 Proclamatori
